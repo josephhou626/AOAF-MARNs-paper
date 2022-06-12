@@ -5,7 +5,7 @@ Image Denoising Using Adaptive and Overlapped Average Filtering and Mixed-Poolin
 
 ## Network Architecture
 
-
+<img src="./figures/Architecture.jpg" width = "1000" div align=center />
 
 ## Environment
 
@@ -26,7 +26,11 @@ Image Denoising Using Adaptive and Overlapped Average Filtering and Mixed-Poolin
 
 
 ## Results
+**Quantitative Evaluations**
+<img src="./figures/table.jpg" width = "1000" div align=center />
 
+**Qualitative Evaluations**
+<img src="./figures/vis_result.jpg" width = "1000" div align=center />
 
 ## Evaluation
 
