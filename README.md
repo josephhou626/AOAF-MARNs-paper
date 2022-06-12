@@ -8,12 +8,21 @@ Image Denoising Using Adaptive and Overlapped Average Filtering and Mixed-Poolin
 <img src="./figures/Architecture.jpg" width = "1000" div align=center />
 
 ## Environment
-
+- Windows 10 
+- GeForce RTX 3090 GPU
+- python3.8.6
+- torch=1.8.1
+- torchvision=0.9.1
 
 ## Installation
 
 
+
+
 ## Dataset
+
+
+
 
 
 ## Train
@@ -38,5 +47,5 @@ Image Denoising Using Adaptive and Overlapped Average Filtering and Mixed-Poolin
 
 ## Reference
 
-
+- "[SPNet](https://github.com/Andrew-Qibin/SPNet)"
 
