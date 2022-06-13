@@ -1,8 +1,8 @@
 clc ; 
 clear ; 
   
-imgRoot = './test/';
-outRoot = './tmp_result/';
+imgRoot = './input_noise_image/';
+outRoot = './AOAF_result/';
 addpath(imgRoot); 
 addpath(outRoot);
 dpath = [dir([imgRoot '*' 'bmp']) ; dir([imgRoot '*' 'jpg']) ; dir([imgRoot '*' 'png']) ; ]; %批量讀取數據(input)

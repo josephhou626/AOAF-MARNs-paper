@@ -235,4 +235,4 @@ class StripPooling(nn.Module):
         out = self.conv3(torch.cat([x1, x2], dim=1))
         mask = out.sigmoid()
 
-        return F.relu_(x * mask + x) , mask
+        return F.relu_(x * mask + x) 

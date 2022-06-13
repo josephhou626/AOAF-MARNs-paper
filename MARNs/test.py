@@ -8,10 +8,14 @@ def test(opt,model):
     model.eval()
     model.to(opt.device)
     testx = readfile(opt.test_path)
+    train_transform = transforms.Compose([
+        transforms.ToTensor(),
+    ])
     test_set = imgdataset(testx ,None,train_transform)
     test_loader = DataLoader(test_set,batch_size =1,shuffle = False)
 
     print(f"[Info]: Start testing data!",flush = True)
+    
 
     ##暫時放結果的array
     result_array = np.ones([1000,1,512,512] , dtype= 'uint8')
@@ -25,4 +29,4 @@ def test(opt,model):
     result_array = np.transpose(result_array,(0,2,3,1)) 
 
     print("[Info] : save images")
-    savefile(result_array,opt.opt.save_results,opt.test_path)
+    savefile(result_array,opt.save_results,opt.test_path)

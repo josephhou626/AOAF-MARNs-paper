@@ -18,8 +18,8 @@ Image Denoising Using Adaptive and Overlapped Average Filtering and Mixed-Poolin
 
 1. Install virtual environment:
 	```shell
-	virtualenv -p python3 exp2 # establish
-	.\exp2\Scripts\activate # activate 
+	virtualenv -p python3 exp3 # establish
+	.\exp3\Scripts\activate # activate 
 	```
 
 2. Clone this repo:
@@ -41,18 +41,31 @@ Image Denoising Using Adaptive and Overlapped Average Filtering and Mixed-Poolin
 
 ## Dataset
 
+我們採用DIV2k 的資料集
 
 
+## AOAF
+
+使用matlab執行AOAF/main.m
+
+把結果放入
+   ```
+   AOAF_results/train/input
+   AOAF_results/test/input
+   ```
+
+## MARNs Train
+
+```
+python main.py --mode train 
+```
 
 
-## Train
+## MARNs Test
 
-
-
-
-## Test
-
-
+```
+python main.py --mode test --load_model_path exp/MARNs/model/model_last
+```
 
 ## Results
 **Quantitative Evaluations**
