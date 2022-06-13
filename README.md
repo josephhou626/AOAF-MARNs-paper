@@ -34,7 +34,7 @@ Image Denoising Using Adaptive and Overlapped Average Filtering and Mixed-Poolin
 
 4. Install dependencies:
    ```shell
-   cd main_scene_dection
+   cd MARNs
    pip install -r requirements.txt
    ```
 
@@ -76,7 +76,7 @@ python main.py --mode test --load_model_path exp/MARNs/model/model_last
 
 ## Evaluation
 
-
+執行measure/measure_main.m 計算PSNR和SSIM分數。
 
 ## Reference
 
